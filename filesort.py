@@ -110,7 +110,6 @@ if __name__ == '__main__':
     for d in dirs:
         if os.path.isdir(os.path.join(filepath, d)):
             new_path = f'{filepath}/{d}'
-            print(new_path)
             new_files_file = filename(new_path)
             file1, file2, file3, file4, file5, file6, file7 = filesearch(new_files_file)
             moveFiles(new_path, file1, file2, file3, file4, file5, file6, file7)
